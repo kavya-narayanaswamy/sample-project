@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <style>
+        *{
+            margin: 10px;
+            padding: 0px;
+
+            
+            color: black;
+        }
+        header{
+            background-color: blue;
+            height: 150px;
+            font-size: 20px;
+            list-style-type: none;
+         }
+        .kavya{
+            
+            font-size: 40px;
+            list-style-type: none;
+        }
+        
+        div p{
+        
+        }
+        div section{
+            
+            color: white;
+        }
+        .hii{
+            color:violet;
+            width: 500px;
+        
+        }
+        header ul{
+             text-decoration: none;
+             list-style-type: none;
+             float: right;
+             display: flex;
+             justify-content: space-around;
+             padding: 0px;
+             font-size: 40px;
+        }
+        .section:hover{background-color: white;
+        border-radius: 10px;
+    padding: 10px;}
+header p{
+    text-align: center;
+
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- combinators: CSS selector can contain more than one simple selcector,vetween simple selector we include combinator.
+    
+        4 types 
+        1. decendent selcector(space) : matches all element that are decendent of a specific elements.
+        2. child selectors(>)  select all the elements that are childrens of a specified elements.
+        3. adjacent siblimg  selector (+) : select an element that is directly after another specific element
+        4. general siblimg selector(~)  : select all elments that are next siblings of specified elements.
+    -->
+   <header> <p class="kavya">Lorem ipsum dolor sit amet consecte.
+
+    </p>
+<ul>
+    <li class="section">kavya</li>
+    <li class="section">chinni</li>
+    <li class="section">nanni</li>
+</ul></header>
+<div>
+    <p>paragraph 1 in the div</p>
+    <p>paragraph 2 in the div</p>
+    <!--this is not child but decendant-->
+    <section><p>this is a section</p></section>
+    <p>p4 in the div</p>
+</div>
+<p class="hii">p5 outside div</p>
+<p>p6 outside div</p>
+<p>p7 outside div</p>
+</body>
+</html>
